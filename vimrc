@@ -146,7 +146,19 @@ colorscheme molokai
 let g:molokai_original = 1
 
 """"""""""""""""""" DoxygenToolkit
+let g:DoxygenToolkit_fileTag="@filen  : "
+let g:DoxygenToolkit_briefTag_pre="@brief  : "
+let g:DoxygenToolkit_authorTag="@author : "
+let g:DoxygenToolkit_versionTag="@version: "
+let g:DoxygenToolkit_dateTag="@date   : "
 let g:DoxygenToolkit_authorName="diego" 
+let g:DoxygenToolkit_versionString="1.0.0"
+let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
+let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
+let g:DoxygenToolkit_paramTag_pre="@param  : "
+let g:DoxygenToolkit_returnTag="@returns: "
+imap <silent> <F3> <Esc>:DoxAuthor<CR>
+imap <silent> <F4> <Esc>:Dox<CR>
 
 """"""""""""""""""" YouCompleteMe
 set completeopt=longest,menu
@@ -188,7 +200,7 @@ let g:airline#extensions#tabline#enabled=1
 nmap <tab> :bn<cr> 
 
 """"""""""""""""""" nerdtree
-map <F2> :NERDTreeToggle<CR>
+map <silent> <F2> :NERDTreeToggle<CR>
 " 文件列表在右侧
 let g:NERDTreeWinPos="right"
 " 忽略以下文件的显示
