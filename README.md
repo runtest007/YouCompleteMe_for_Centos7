@@ -1,2 +1,2 @@
-# YouCompleteMe_for_Centos7
+# youcompleteme_for_centos7
 centos7安装youcompleteme插件方法，支持python2.7，需安装vim8
